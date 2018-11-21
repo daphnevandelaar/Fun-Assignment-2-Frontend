@@ -1,0 +1,20 @@
+.acc-content{
+    color: black;
+    border: lightgray solid 1px;
+    border-radius: 0px;
+    box-shadow: 2px 2px 5px grey;
+    background-color: rgb(235, 232, 232);
+    width: 99%;
+    margin: 0 auto;
+    
+}
+.react-sanfona-item-title{
+    color: gray;
+    border: lightgray solid 1px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.react-sanfona-item{
+    margin-bottom: 10px;
+}
