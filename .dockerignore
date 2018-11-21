@@ -1,0 +1,11 @@
+# Items that doesn't need to be in the Docker image
+# Anything that isn't used to build the system should be written here:
+Dockerfile
+.dockerignore
+.gitignore
+README.md
+
+# Artifacts that will be build during the image creation
+# This should contain all files created during the: "npm run build" command
+build
+node_modules
