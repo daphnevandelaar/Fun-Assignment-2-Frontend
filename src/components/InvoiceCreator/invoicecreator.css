@@ -1,0 +1,17 @@
+.rightbottomcorner{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+li {
+    text-align: left;
+}
+.left{
+    text-align: left;
+}
+.right{
+    float: right;
+}
+.clickable{
+    cursor: pointer;
+}

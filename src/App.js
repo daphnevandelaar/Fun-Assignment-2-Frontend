@@ -5,8 +5,9 @@ import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 import Navigation from './Navigation';
 import InvoiceOverview from './components/InvoiceOverview/InvoiceOverview';
-import InvoiceCreator from './components/InvoiceCreator';
-import Accordionneke from './Accordionneke';
+import InvoiceCreator from './components/InvoiceCreator/InvoiceCreator';
+import CustomerOVerview from './components/CustomerOverview/CustomerOverview';
+import CustomerCreator from './components/CustomerCreator/CustomerCreator';
 
 class App extends Component {
 
@@ -27,9 +28,8 @@ class App extends Component {
             <div className="container">
               <Route path='/invoiceOverview' component={InvoiceOverview}/>
               <Route path='/invoiceCreator' component={InvoiceCreator}/>
-            </div>
-            <div>
-              {/* <Accordionneke/> */}
+              <Route path='/CustomerOverview' component={CustomerOVerview}/>
+              <Route path='/CustomerCreator' component={CustomerCreator}/>
             </div>
           </div>
         </Route>

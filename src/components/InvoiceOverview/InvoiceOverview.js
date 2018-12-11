@@ -18,7 +18,7 @@ class InvoiceOverview extends Component {
             invoice =>
             <Accordion>
                 <AccordionItem title={invoice.title} expanded={invoice.id}>
-                    <div class="acc-content">
+                    <div className="acc-content">
                         {invoice.content}
                     </div>
                 </AccordionItem>
@@ -29,15 +29,15 @@ class InvoiceOverview extends Component {
             <div>
                <Accordion>
                     <AccordionItem title="What is a dog?" expanded="testje">
-                        <div class="acc-content">
+                        <div className="acc-content">
                             Een beestje
-                            <i class="fas fa-trash-alt"></i>
+                            <i className="fas fa-trash-alt"></i>
                         </div>
                     </AccordionItem> 
                     <AccordionItem title="What is a cat?" expanded="testje">
-                        <div class="acc-content">
+                        <div className="acc-content">
                             ook een beestje..
-                            <i class="fas fa-trash-alt"></i>
+                            <i className="fas fa-trash-alt"></i>
                         </div>
                     </AccordionItem>
                 </Accordion>

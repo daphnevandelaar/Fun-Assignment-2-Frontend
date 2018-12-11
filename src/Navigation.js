@@ -6,7 +6,7 @@ class Navigation extends Component {
   render() {
     return (
       <nav className="navbar navbar-expand-md navbar-light bg-light">
-        <span className="navbar-brand" href="#"><img src="http://i64.tinypic.com/10p8tpe.png" class="Factura-Logo" alt="Logo"></img></span>
+        <span className="navbar-brand" href="#"><img src="http://i64.tinypic.com/10p8tpe.png" className="Factura-Logo" alt="Logo"></img></span>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -14,6 +14,8 @@ class Navigation extends Component {
           <ul className="navbar-nav">
             { this.props.isLoggedIn ? <NavItem name={"Facturen overzicht"} to={"invoiceOverview"} /> : null }
             { this.props.isLoggedIn ? <NavItem name={"Factuur maken"} to={"invoiceCreator"} /> : null }
+            { this.props.isLoggedIn ? <NavItem name={"Klanten overzicht"} to={"CustomerOverview"} /> : null }
+            { this.props.isLoggedIn ? <NavItem name={"Klant toevoegen"} to={"CustomerCreator"} /> : null }
           </ul>
         </div>
       </nav>

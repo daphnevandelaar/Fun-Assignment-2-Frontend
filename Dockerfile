@@ -6,7 +6,7 @@ RUN npm install -g serve
 # Run serve when the image is running
 CMD serve -s build
 # Expose the docker port so it knows where it's running
-EXPOSE 5000
+EXPOSE 3000
 
 # --------------------------------------------------------------------
 # All uncommon and changing parts for the dockerfile
