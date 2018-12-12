@@ -11,7 +11,8 @@ export default class InvoiceCreator extends Component {
     super(props);
     this.state = {
       startDate: new Date(),
-      fromTasks: ''
+      fromTasks: '',
+      customerId: 0
     };
   }
 
@@ -19,6 +20,11 @@ export default class InvoiceCreator extends Component {
     this.setState({
       fromTasks: data
     });
+  }
+
+  updateInvoice(id){
+    console.log("Triggereddd");
+    console.log(id);
   }
 
   handleChange(date) {
@@ -36,7 +42,7 @@ export default class InvoiceCreator extends Component {
             <Tasks/>
           </div>
           <div className="col-sm">
-            <Customers/>
+            <Customers triggerParentUpdate={this.updateInvoice}/>
           </div>
           <div className="col-sm">
             <h2>Factuur</h2>
@@ -46,6 +52,7 @@ export default class InvoiceCreator extends Component {
               onChange={this.handleChange}
               dateFormat="dd/MM/yyyy"
             />
+            
             <div className="rightbottomcorner">
               <input type="submit"/>  
               <h5>{this.state.fromTasks}</h5>

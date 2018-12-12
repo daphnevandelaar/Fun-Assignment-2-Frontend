@@ -2,8 +2,12 @@ import React, { Component } from 'react'
 import axios from 'axios';
 
 class Customers extends Component {
+  constructor(props){
+    super(props);
+  }
 
   handleClick(id, event){
+    this.props.updateInvoice(id);
     console.log(id);
     console.log(event);
   }
@@ -28,7 +32,9 @@ class Customers extends Component {
                 <ul className="list-group">
                   { this.state.customers.map(customer => 
                     <li key={customer.id} className="list-group-item"> {customer.firstname} {customer.lastname} 
-                      <div className= "right" value={customer.id} id={customer.id} onClick={(e) => this.handleClick(customer.id ,e)}>
+                      {/* <div className= "right" value={customer.id} id={customer.id} onClick={(e) => this.handleClick(customer.id ,e)}> */}
+                      <div className= "right" value={customer.id} id={customer.id} onClick={this.props.triggerParentUpdate}>
+
                         <i className="fas fa-plus clickable"/>
                       </div>
                     </li>
